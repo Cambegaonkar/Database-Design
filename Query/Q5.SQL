@@ -1,0 +1,1 @@
+Select * from booking where room_id IN (SELECT room_id from hotels where hotel_id=1001) AND '2017-12-01' >= check_in AND '2017-12-13' <=check_out;
